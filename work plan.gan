@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-11-21" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="2.8.1" locale="zh_CN">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-11-20" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="2.8.1" locale="zh_CN">
     <description/>
-    <view zooming-state="default:1" id="gantt-chart">
+    <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="名称" width="277" order="0"/>
         <field id="tpd4" name="开始日期" width="84" order="1"/>
         <field id="tpd5" name="结束日期" width="117" order="2"/>
@@ -95,9 +95,9 @@
         </task>
         <task id="70" name="社区分享内容查询" color="#8cb6ce" meeting="false" start="2016-12-05" duration="2" complete="0" expand="true"/>
         <task id="73" name="app 版本多语言控制" color="#8cb6ce" meeting="false" start="2016-12-07" duration="1" complete="0" expand="true"/>
+        <task id="61" name="积木教育版本控制" color="#8cb6ce" meeting="false" start="2016-12-12" duration="1" complete="0" expand="true"/>
         <task id="59" name="模型排序及过滤" color="#8cb6ce" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
         <task id="58" name="包装排序及过滤" meeting="false" start="2016-12-08" duration="1" complete="0" expand="true"/>
-        <task id="61" name="积木教育版本控制" color="#8cb6ce" meeting="false" start="2016-12-12" duration="1" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="林汉锐" function="Default:0" contacts="" phone=""/>
