@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-11-20" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="2.8.1" locale="zh_CN">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-11-20" view-index="0" gantt-divider-location="482" resource-divider-location="363" version="2.8.1" locale="zh_CN">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="名称" width="277" order="0"/>
@@ -9,8 +9,8 @@
         <timeline><![CDATA[9]]></timeline>
     </view>
     <view id="resource-table">
-        <field id="0" name="名称" width="210" order="0"/>
-        <field id="1" name="默认角色" width="86" order="1"/>
+        <field id="0" name="名称" width="241" order="0"/>
+        <field id="1" name="默认角色" width="118" order="1"/>
     </view>
     <!-- -->
     <calendars base-id="China">
@@ -61,6 +61,7 @@
         <date year="2029" month="2" date="13" type="HOLIDAY"><![CDATA[#Chinese New Year]]></date>
         <date year="2030" month="2" date="3" type="HOLIDAY"><![CDATA[#Chinese New Year]]></date>
         <date year="2031" month="1" date="13" type="HOLIDAY"><![CDATA[#Chinese New Year]]></date>
+        <date year="2016" month="12" date="16" type="HOLIDAY"><![CDATA[Holiday on 16-12-16 上午12:00]]></date>
     </calendars>
     <tasks empty-milestones="true">
         <taskproperties>
@@ -93,11 +94,13 @@
             <task id="53" name="删除模型" color="#8cb6ce" meeting="false" start="2016-11-29" duration="1" complete="100" expand="true"/>
             <task id="55" name="本地测试" color="#8cb6ce" meeting="false" start="2016-12-02" duration="1" complete="100" expand="true"/>
         </task>
-        <task id="70" name="社区分享内容查询" color="#8cb6ce" meeting="false" start="2016-12-05" duration="2" complete="0" expand="true"/>
-        <task id="73" name="app 版本多语言控制" color="#8cb6ce" meeting="false" start="2016-12-07" duration="1" complete="0" expand="true"/>
-        <task id="61" name="积木教育版本控制" color="#8cb6ce" meeting="false" start="2016-12-12" duration="1" complete="0" expand="true"/>
+        <task id="70" name="社区分享内容查询" color="#8cb6ce" meeting="false" start="2016-12-05" duration="2" complete="100" expand="true"/>
+        <task id="73" name="app 版本多语言控制" color="#8cb6ce" meeting="false" start="2016-12-07" duration="1" complete="100" expand="true"/>
         <task id="59" name="模型排序及过滤" color="#8cb6ce" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
-        <task id="58" name="包装排序及过滤" meeting="false" start="2016-12-08" duration="1" complete="0" expand="true"/>
+        <task id="58" name="包装排序及过滤" color="#8cb6ce" meeting="false" start="2016-12-12" duration="1" complete="100" expand="true"/>
+        <task id="74" name="积木教育版本控制" color="#8cb6ce" meeting="false" start="2016-12-13" duration="2" complete="100" expand="true"/>
+        <task id="76" name="web服务器 HTTPS 请求设置" color="#8cb6ce" meeting="false" start="2016-12-15" duration="1" complete="0" expand="true"/>
+        <task id="75" name="完善反馈功能" color="#8cb6ce" meeting="false" start="2016-12-19" duration="3" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="林汉锐" function="Default:0" contacts="" phone=""/>
