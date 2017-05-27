@@ -1,0 +1,34 @@
+two heads 
+
+SELECT * FROM dlt_lottery_ext c
+LEFT JOIN dlt_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball1` = 8 AND c.`red_ball2` = 11
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+
+one head
+
+SELECT * FROM dlt_lottery_ext c
+LEFT JOIN dlt_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball1` = 8 
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+
+two ends
+
+SELECT * FROM dlt_lottery_ext c
+LEFT JOIN dlt_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball4` = 15 AND c.`red_ball5` = 17
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+
+one end
+
+SELECT * FROM dlt_lottery_ext c
+LEFT JOIN dlt_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball5` = 17
+ORDER BY c.`id` DESC
+LIMIT 0, 6

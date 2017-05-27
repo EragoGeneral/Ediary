@@ -1,0 +1,5 @@
+SELECT c.`blue_ball2`, p.`blue_ball2`, n.`blue_ball2`, COUNT(n.`blue_ball2`) FROM dlt_lottery_ext c
+LEFT JOIN dlt_lottery_ext p ON c.`id` = p.`id` + 1
+LEFT JOIN dlt_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE p.`blue_ball2` = 6 AND c.`blue_ball2` = 10
+GROUP BY c.`blue_ball2`, p.`blue_ball2`, n.`blue_ball2` 
