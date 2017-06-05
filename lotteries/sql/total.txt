@@ -1,5 +1,5 @@
 SELECT * FROM `dlt_lottery_ext`
-WHERE period >= 2017061 - 30
+WHERE period >= 17061 - 30
 ORDER BY id DESC
 LIMIT 0,30
 

@@ -1,0 +1,25 @@
+SELECT 
+	e0.period, e0.id, e0.`blue_ball1`, 
+	e1.period, e1.id, e1.`blue_ball1`, 
+	e2.period, e2.id, e2.`blue_ball1`,  
+	e3.period, e3.id, e3.`blue_ball1`  
+FROM dlt_lottery_ext e1
+LEFT JOIN dlt_lottery_ext e0 ON e0.id = e1.`id` - 3
+LEFT JOIN dlt_lottery_ext e2 ON e2.id = e1.`id` + 3
+LEFT JOIN dlt_lottery_ext e3 ON e3.id = e2.`id` + 3
+WHERE e1.`blue_ball1` = 5 AND e2.`blue_ball1` = 5
+ORDER BY e1.id DESC
+LIMIT 0, 5
+
+SELECT 
+	e0.period, e0.id, e0.`blue_ball2`, 
+	e1.period, e1.id, e1.`blue_ball2`, 
+	e2.period, e2.id, e2.`blue_ball2`,  
+	e3.period, e3.id, e3.`blue_ball2`  
+FROM dlt_lottery_ext e1
+LEFT JOIN dlt_lottery_ext e0 ON e0.id = e1.`id` - 3
+LEFT JOIN dlt_lottery_ext e2 ON e2.id = e1.`id` + 3
+LEFT JOIN dlt_lottery_ext e3 ON e3.id = e2.`id` + 3
+WHERE e1.`blue_ball2` = 12 AND e2.`blue_ball2` = 5
+ORDER BY e1.id DESC
+LIMIT 0, 5
