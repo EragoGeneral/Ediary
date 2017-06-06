@@ -1,0 +1,33 @@
+two heads
+
+SELECT * FROM tb_lottery_ext c
+LEFT JOIN tb_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball1` = 5 AND c.`red_ball2` = 10
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+
+ONE head
+
+SELECT * FROM tb_lottery_ext c
+LEFT JOIN tb_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball1` = 5
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+
+two ENDS
+
+SELECT * FROM tb_lottery_ext c
+LEFT JOIN tb_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball5` = 15 AND c.`red_ball6` = 17
+ORDER BY c.`id` DESC
+LIMIT 0, 6
+
+one end
+
+SELECT * FROM tb_lottery_ext c
+LEFT JOIN tb_lottery_ext n ON n.`id` = c.`id` + 1
+WHERE c.`red_ball6` = 31
+ORDER BY c.`id` DESC
+LIMIT 0, 6

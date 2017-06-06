@@ -1,0 +1,11 @@
+SELECT 
+	e0.period, e0.id, e0.`blue_ball`, 
+	e1.period, e1.id, e1.`blue_ball`, 
+	e2.period, e2.id, e2.`blue_ball`,  
+	e3.period, e3.id, e3.`blue_ball`  
+FROM tb_lottery_ext e1
+LEFT JOIN tb_lottery_ext e0 ON e0.id = e1.`id` - 3
+LEFT JOIN tb_lottery_ext e2 ON e2.`id` = e1.`id` + 3
+LEFT JOIN tb_lottery_ext e3 ON e3.id = e2.`id` + 3
+WHERE e1.`blue_ball` = 4 AND e2.`blue_ball` = 16
+

@@ -1,0 +1,7 @@
+SELECT * FROM `tb_lottery_ext`
+WHERE period >= 2017061 - 30
+-- and blue_ball mod 2 = 0
+-- and blue_ball >= 8
+ORDER BY id DESC
+LIMIT 0,30
+
