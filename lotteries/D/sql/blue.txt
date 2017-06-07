@@ -23,3 +23,14 @@ LEFT JOIN dlt_lottery_ext e3 ON e3.id = e2.`id` + 3
 WHERE e1.`blue_ball2` = 12 AND e2.`blue_ball2` = 5
 ORDER BY e1.id DESC
 LIMIT 0, 5
+
+
+SELECT n.`blue_ball2`, COUNT(n.`blue_ball2`) FROM `dlt_lottery_ext` c
+-- WHERE period >= 17065 - 100
+LEFT JOIN dlt_lottery_ext n ON n.id = c.`id` + 1
+WHERE 1 = 1
+ -- and c.`blue_ball1` = 3  
+ AND c.`blue_ball2` = 4
+GROUP BY n.`blue_ball2`
+ORDER BY COUNT(n.`blue_ball2`) DESC
+
