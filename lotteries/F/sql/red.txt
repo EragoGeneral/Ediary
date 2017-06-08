@@ -31,3 +31,7 @@ LEFT JOIN tb_lottery_ext n ON n.`id` = c.`id` + 1
 WHERE c.`red_ball6` = 31
 ORDER BY c.`id` DESC
 LIMIT 0, 6
+
+
+
+

@@ -7,5 +7,12 @@ FROM tb_lottery_ext e1
 LEFT JOIN tb_lottery_ext e0 ON e0.id = e1.`id` - 3
 LEFT JOIN tb_lottery_ext e2 ON e2.`id` = e1.`id` + 3
 LEFT JOIN tb_lottery_ext e3 ON e3.id = e2.`id` + 3
-WHERE e1.`blue_ball` = 4 AND e2.`blue_ball` = 16
+WHERE e1.`blue_ball` = 7 AND e2.`blue_ball` = 10
 
+
+SELECT n.blue_ball, COUNT(n.blue_ball)
+FROM tb_lottery_ext c 
+LEFT JOIN tb_lottery_ext n ON n.id = c.`id` + 1
+WHERE c.`blue_ball` = 7
+GROUP BY n.blue_ball
+ORDER BY COUNT(n.blue_ball) DESC
