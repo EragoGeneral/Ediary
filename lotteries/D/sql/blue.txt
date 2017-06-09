@@ -34,3 +34,12 @@ WHERE 1 = 1
 GROUP BY n.`blue_ball2`
 ORDER BY COUNT(n.`blue_ball2`) DESC
 
+
+
+SELECT c.*, n.*
+FROM `dlt_lottery_ext` c
+LEFT JOIN dlt_lottery_ext n ON n.id = c.`id` + 1
+WHERE 1 = 1
+  AND c.`blue_ball1` = 5  
+ AND c.`blue_ball2` = 12
+ ORDER BY n.blue_ball1, n.blue_ball2
