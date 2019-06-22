@@ -7,6 +7,7 @@
         <option id="taskLabelUp" value="resources"/>
         <option id="taskLabelDown" value=""/>
         <timeline><![CDATA[9]]></timeline>
+        <option id="color.recent"><![CDATA[#ff0033 #66ff00]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="名称" width="241" order="0"/>
